@@ -1,0 +1,122 @@
+.home{
+    background-image: url("../assets/home/background-home-desktop.jpg");
+}
+.hero{
+    display: flex;
+    padding-top: 250px;
+    padding-bottom:130px ;
+}
+
+@media screen and (max-width:1080px) {
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        gap: 156px;
+        align-items: center;
+        padding-top: 106px;
+        padding-bottom: 90px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px) {
+   .hero{
+    padding-top: 48px;
+    gap:80px;
+    padding-bottom: 48px;
+   }
+}
+.hero .text,
+ .hero .explore{
+    flex: 0 0 50%;
+}
+
+.hero .explore{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.hero .explore .explore-btn {
+    height: 270px;
+    width: 270px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    
+}
+
+@media screen and (max-width:1080px) {
+    .hero .explore .explore-btn{
+        height: 242px;
+        width: 242px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero .explore .explore-btn{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.hero .explore .explore-btn::before{
+    content: "";
+    height: 270px;
+    width: 270px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+@media screen and (max-width:1080px) {
+    .hero .explore .explore-btn::before{
+        height: 242px;
+        width: 242px;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero .explore .explore-btn::before{
+        display: none;
+    }
+}
+
+.hero .explore .explore-btn:hover::before{
+    scale: 1.6;
+    opacity: 0.2;
+    
+}
+
+@media screen and (max-width:768px) {
+    .hero .explore .explore-btn:hover::before{
+        display: none;
+    }
+}
+
+.hero .explore .explore-btn p{
+    color: var(--color-black);
+    font-family: Bellefair;
+    font-size: 2rem;
+    letter-spacing: 0.125rem;   
+    text-transform: uppercase;
+    position: absolute;
+    top: 43%;
+    left: 24%;
+}
+
+@media screen and (max-width:1080px) {
+    .hero .explore .explore-btn p{
+        top: 44%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero .explore .explore-btn p{
+        font-size: 1.25rem;
+    }
+}

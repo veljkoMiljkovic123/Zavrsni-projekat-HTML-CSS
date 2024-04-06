@@ -1,0 +1,163 @@
+.crew{
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero{
+    padding-top: 76px;
+}
+
+.hero h5 span{
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+.hero .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+@media screen and (max-width:1080px) {
+    .hero .content{
+       flex-direction: column;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero .content{
+       flex-direction: column-reverse;
+       padding-top: 32px;
+    }
+    .content .text{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.content .text h4{
+    opacity: .5;
+}
+
+.content .text h3{
+    margin-block: 25px;
+}
+
+@media screen and (max-width:768px) {
+    .content .text h3{
+        margin-top: 10px;
+        margin-bottom:16px ;
+    }
+}
+
+.content .text .dots{
+    display: flex;
+    gap: 25px;
+    margin-top:120px;
+}
+
+@media screen and (max-width:1080px) {
+    .content .text .dots{
+       justify-content: center;
+       margin-top:40px;
+       margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content .text .dots{
+       margin-top:32px;
+       margin-bottom: 32px;
+    }
+}
+
+.content .text .dots .dot{
+    display: block;
+    background-color: var(--color-white);
+    opacity: 0.2;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 0;
+    transition: var(--transition);
+    
+}
+
+.content .text .dots .dot:hover{
+    opacity: .5;
+}
+.content .text .dots .dot.active{
+    opacity: 1;
+}
+
+@media screen and (max-width:1080px) {
+    .container{
+       padding-inline: 155px;
+    }
+
+    .hero{
+        padding-top: 40px;
+    }
+    .img{
+        width: 456px;
+        height: 572px;
+    }
+    .img2{
+        width: 368.853px;
+        height: 532px;
+    }
+    .img3{
+        width: 539.508px;
+        height: 532px;
+    }
+    .img4{
+        width: 433.09px;
+        height: 532px;
+    }
+
+    .content .text .dots{
+        gap: 14px;
+    }
+
+    .content .text .dots .dot{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+       padding: 24px 0 104px 0;
+    }
+
+    .hero{
+        padding-top: 24px;
+        padding-bottom: 104px;
+    }
+    .img{
+        width: auto;
+        height: 222px;
+    }
+    .img2{
+        width: auto;
+        height: 222px;        
+    }
+    .img3{
+        width: auto;
+        height: 223px;
+    }
+    .img4{
+        width: auto;
+        height: 222px;
+    }
+
+    .content .text .dots{
+        gap: 14px;
+    }
+
+    .content .text .dots .dot{
+        width: 10px;
+        height: 10px;
+    }
+}
